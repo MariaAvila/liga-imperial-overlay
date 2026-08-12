@@ -31,15 +31,6 @@
     background-size:3cqw 3cqw; background-position:0 0,1.5cqw 1.5cqw; }
   body.overlay .stage, .stage.bare { background-image:none; }
 
-  /* streamer camera slot (top-left corner) */
-  .cam { position:absolute; top:1.6cqw; left:1.6cqw; width:16cqw; height:9cqw; border-radius:10px;
-    background:transparent; border:.3cqw solid #caa84a; z-index:6;
-    box-shadow:0 6px 18px rgba(0,0,0,.45), inset 0 0 0 .12cqw rgba(0,0,0,.55); }
-  .cam .live { position:absolute; top:.7cqw; left:.7cqw; display:flex; align-items:center; gap:.5cqw;
-    font-weight:700; font-size:1.25cqw; color:#fff; letter-spacing:.06em;
-    background:rgba(0,0,0,.5); padding:.15cqw .7cqw; border-radius:999px; }
-  .cam .dot { width:.85cqw; height:.85cqw; border-radius:50%; background:#ff3b3b; box-shadow:0 0 6px #ff3b3b; }
-
   /* centered top bar */
   .bar { position:absolute; top:4cqw; left:50%; transform:translateX(-50%); width:64cqw; height:6.4cqw;
     border-radius:6px; display:flex; align-items:center; justify-content:space-between; padding:0 2cqw;
@@ -116,7 +107,6 @@
 <body>
 
 <div class="stage" id="cap">
-  <div class="cam"><span class="live"><span class="dot"></span>LIVE</span></div>
   <div class="bar">
     <div class="grp left">
       <span class="shield left" id="shL"></span>
